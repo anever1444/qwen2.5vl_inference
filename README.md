@@ -6,6 +6,7 @@ git clone https://github.com/anever1444/qwen2.5vl_inference
 cd qwen2.5vl_inference
 python -m venv venv
 venv\Scripts\activate.bat
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 pip install -r requirements.txt
 python .\qwen_2.5vl_inference.py <directory_of_mp4s>
 ```
